@@ -131,6 +131,12 @@ where
         self.step = step;
         self
     }
+
+    /// Sets the range of the [`Slider`].
+    pub fn range(mut self, range: RangeInclusive<T>) -> Self {
+        self.range = range;
+        self
+    }
 }
 
 /// The local state of a [`Slider`].
